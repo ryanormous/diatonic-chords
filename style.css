@@ -1,0 +1,190 @@
+
+body {
+    margin: 0;
+    background-color: #444;
+    color: #444;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: inherit;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0.6em 0;
+    white-space: nowrap;
+}
+
+li {
+    display: inline-block;
+    margin: 0 0.5em;
+    padding: 0;
+    position: relative;
+}
+
+button {
+    background-color: #bbb;
+    border-radius: 0.25em;
+    border: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    line-height: 2em;
+    margin: 0;
+    padding-top: 0.25em;
+    width: 3.5em;
+}
+
+#top {
+    margin-top: 3.5em;
+}
+
+table {
+    margin-top: 0.1em;
+    width: 100%;
+}
+
+th, td, li.empty {
+    min-width: 10em;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0.25em 0;
+    font-size: 1.25em;
+    text-align: center;
+}
+
+p.chord_num {
+    font-family: serif;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+/*
+  key C
+  keyG♭
+  hue+120 sat+34
+  odd: #a2bba2;
+  even: #cfeecf;
+*/
+tr.keyC:nth-child(odd),
+tr.keyG♭:nth-child(odd) {
+    background-color: #a2bba2;
+}
+tr.keyC:nth-child(even),
+tr.keyG♭:nth-child(even),
+button.keyC_vis,
+button.keyG♭_vis {
+    background-color: #cfeecf;
+}
+
+
+/*
+  keyD♭
+  keyG
+  hue+0 sat+34
+  odd: #bba2a2;
+  even: #eecfcf;
+*/
+tr.keyD♭:nth-child(odd),
+tr.keyG:nth-child(odd) {
+    background-color: #bba2a2;
+}
+tr.keyD♭:nth-child(even),
+tr.keyG:nth-child(even),
+button.keyD♭_vis,
+button.keyG_vis {
+    background-color: #eecfcf;
+}
+
+/*
+  key D
+  keyA♭
+  hue+60 sat+34
+  odd: #bbbba2;
+  even: #eeeecf;
+*/
+tr.keyD:nth-child(odd),
+tr.keyA♭:nth-child(odd) {
+    background-color: #bbbba2;
+}
+tr.keyD:nth-child(even),
+tr.keyA♭:nth-child(even),
+button.keyD_vis,
+button.keyA♭_vis {
+    background-color: #eeeecf;
+}
+
+/*
+  keyE♭
+  keyA
+  hue+300 sat+34
+  odd: #bba2bb;
+  even: #eecfee;
+*/
+tr.keyE♭:nth-child(odd),
+tr.keyA:nth-child(odd) {
+    background-color: #bba2bb;
+}
+tr.keyE♭:nth-child(even),
+tr.keyA:nth-child(even),
+button.keyE♭_vis,
+button.keyA_vis {
+    background-color: #eecfee;
+}
+
+/*
+  keyE
+  keyB♭
+  hue+180 sat+34
+  odd: #a2bbbb;
+  even: #cfeeee;
+*/
+tr.keyE:nth-child(odd),
+tr.keyB♭:nth-child(odd) {
+    background-color: #a2bbbb;
+}
+tr.keyE:nth-child(even),
+tr.keyB♭:nth-child(even),
+button.keyE_vis,
+button.keyB♭_vis {
+    background-color: #cfeeee;
+}
+
+/*
+  key F
+  key B
+  hue+240 sat+34
+  odd: #a2a2bb;
+  even: #cfcfee;
+*/
+tr.keyF:nth-child(odd),
+tr.keyB:nth-child(odd) {
+    background-color: #a2a2bb;
+}
+tr.keyF:nth-child(even),
+tr.keyB:nth-child(even),
+button.keyF_vis,
+button.keyB_vis {
+    background-color: #cfcfee;
+}
+
+/* hover */
+tr[class^="key"]:hover,
+button:hover {
+    background-color: #eee;
+}
+button:hover {
+    color: #000;
+    cursor: pointer;
+}
+
